@@ -1,41 +1,37 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 /* Navigation */
-#navbar{
-    flex-direction: column;
+#navbar {
+  flex-direction: column;
 }
 /* Home-section */
-#home{
-    flex-direction: column;
-    height: 260px;
-    padding: 0.1rem 0.2rem;
+#home {
+  flex-direction: column;
+  height: 260px;
+  padding: 0.1rem 0.2rem;
 }
-#home::before{
-  height: 525px; 
-  right: 0; 
+#home::before {
+  height: 525px;
+  right: 0;
 }
-#home p{
-    font: 12px;
+#home p {
+  font: 12px;
 }
 
 /* Our services section */
-#services{
-    flex-direction: column; 
-}
-#services.box{
-   
+#services {
+  flex-direction: column;
 }
 /* Our team section*/
 .team-section {
-    overflow: hidden;
+  overflow: hidden;
 }
-#team{
-    flex-direction: vertical;
+#team {
+  flex-direction: vertical;
 }
 /* Our platform section */
 
 /* Contact us section */
 
 /* footer section  */
-
