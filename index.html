@@ -18,6 +18,11 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    media="screen and (max-width:1230px)"
+    href="css/phone.css"
+  />
   <body>
     <nav id="navbar">
       <div id="logo">
@@ -27,10 +32,13 @@
         <li class="item">
           <a href="#"><i class="fa-solid fa-house"></i>Home</a>
         </li>
-        <li class="item"><a href="#">Libraries</a></li>
-        <li class="item"><a href="#">Notes</a></li>
-        <li class="item"><a href="#">Suggestions</a></li>
-        <li class="item"><a href="#">Contact us</a></li>
+        <li class="item">
+          <a href="#"><i class="fa-solid fa-book"></i>Libraries</a>
+        </li>
+        <li class="item"><a href="#"><i class="fa-brands fa-stack-overflow"></i>Notes</a></li>
+        <li class="item"><a href="#"><i class="fa-solid fa-star"></i>
+          Suggestions</a></li>
+        <li class="item"><a href="#"><i class="fa-solid fa-user"></i>Contact us</a></li>
       </ul>
     </nav>
 
@@ -45,6 +53,7 @@
       <button class="btn">Book Now</button>
     </section>
 
+    <hr />
     <section class="services-container">
       <h1 class="h-primary center">Our Services</h1>
 
@@ -81,6 +90,7 @@
         </div>
       </div>
     </section>
+    <hr />
 
     <!-- Team Section  -->
 
@@ -115,17 +125,64 @@
     <section id="contact-section">
       <h1 class="h-primary center">Contact</h1>
       <div class="contact">
-        <div class="form">
-          <form action="">
-            <div class="form-item">
-              <label for="name">Name:</label>
-              <input type="text" name="myname" id="name" placeholder="Enter your Name">
+        <form action="">
+          <div class="form-item">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              class="info"
+              id="name"
+              placeholder="Enter your Name"
+            /><br />
 
-              <label for=""></label>
+            <label for="qual">Qualification:</label>
+            <input
+              type="text"
+              class="info"
+              id="qual"
+              placeholder="Enter your Qualification"
+            /><br />
+            <label for="ag">Age:</label>
+            <input
+              type="text"
+              class="info"
+              id="ag"
+              placeholder="Enter your Age"
+            /><br />
+            <label for="add">Address:</label>
+            <input
+              type="text"
+              class="info"
+              id="add"
+              placeholder="Enter your Address"
+            /><br />
+            <div class="mygender">
+              Gender: <input type="radio" name="mygender" /> Male<input
+                type="radio"
+                name="mygender"
+              />
+              Female<input type="radio" name="mygender" /> Other
             </div>
-          </form>
-        </div>
+            <br />
+            <label for="sub">Subject:</label>
+            <select name="subject" id="mygender" id="sub">
+              <option value="Physics">Physics</option>
+              <option value="Physics">Chemistry</option>
+              <option value="Physics">Mathematics</option>
+              <option value="Physics">Others</option></select
+            ><br />
+            <label for="msg">Message:</label>
+            <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+            <button class="btn">Submit Now</button>
+            <button class="btn">Reset Now</button>
+          </div>
+        </form>
       </div>
     </section>
+    <footer>
+      <div class="center">
+        Copyright &copy www.learningNepal.com |All Right Reserved|
+      </div>
+    </footer>
   </body>
 </html>

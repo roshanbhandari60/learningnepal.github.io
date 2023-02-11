@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+}
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+/* Home-section */
+#home{
+    flex-direction: column;
+    height: 260px;
+    padding: 0.1rem 0.2rem;
+}
+#home::before{
+  height: 525px; 
+  right: 0; 
+}
+#home p{
+    font: 12px;
+}
+
+/* Our services section */
+#services{
+    flex-direction: column; 
+}
+#services.box{
+   
+}
+/* Our team section*/
+.team-section {
+    overflow: hidden;
+}
+#team{
+    flex-direction: vertical;
+}
+/* Our platform section */
+
+/* Contact us section */
+
+/* footer section  */
+

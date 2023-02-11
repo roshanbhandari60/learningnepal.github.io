@@ -2,6 +2,8 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  
 }
 
 /* CSS variables */
@@ -32,6 +34,9 @@
 #navbar ul {
   display: flex;
   font-family: "Baloo Bhai";
+}
+i{
+  padding: 2px;
 }
 
 #navbar::before {
@@ -71,7 +76,7 @@
   padding: 0.5rem 4rem;
   justify-content: center;
   align-items: center;
-  height: 260px;
+  height: 290px;
 }
 #home::before {
   content: "";
@@ -92,7 +97,7 @@
   margin: 25px 0px;
 }
 #services .box {
-  width: 25%;
+  width: 100%;
   border: 3px solid red;
   padding: 20px;
   margin: 4px 7px;
@@ -125,7 +130,7 @@ services .box p {
 
 #team {
   display: flex;
-  flex-wrap: wrap;
+  
   justify-content: center;
   align-items: center;
 }
@@ -147,6 +152,50 @@ services .box p {
   width: 75%;
 }
 
+/* Contact Section  */
+#contact-section{
+  position: relative;
+}
+
+#contact-section::before{
+  content: '';
+  background: url('../img/contact/contact.png')no-repeat center center/cover;
+  position: absolute;
+  height: 770px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .info, .contact textarea{
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+.contact label{
+  font-size: 1.5rem;
+  font-family: 'Bree Serif',sans-serif;
+}
+.mygender,#mygender{
+  padding: 0.1rem;
+  margin: 0.1rem;
+  font-size: 1rem;
+}
+.mygender{
+  font-size: 1.2rem;
+  margin-bottom: -0.5rem;
+}
+footer{
+  background: black;
+  color: white;
+  padding: 16px 11px;
+}
 
 /* Utility classes */
 #home h1 {
@@ -159,8 +208,8 @@ services .box p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .h-primary {
-  font-size: 3.5rem;
-  padding: 2rem;
+  font-size: 3rem;
+  padding: 1rem;
   font-family: cursive;
 }
 .h-secondary {
@@ -176,7 +225,7 @@ services .box p {
   background-color: brown;
   color: aliceblue;
   border-radius: 0.5rem;
-  margin: 2rem;
+  margin: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
 }
